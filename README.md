@@ -18,9 +18,9 @@ The essential python packages were listed in ```requirements.txt```.
 #### `data/` directory.  
 
 - `edges_g.pkl`: gene heterogeneous network, which contains five edge types.
-- `gene_feature.npy`: node feature of gene heterogeneous networks, which contains 32-dimensional features of 68061 nodes in the gene heterogeneous network
+- `gene_feature.npy`: node feature of gene heterogeneous networks, which contains 32-dimensional features of 47837 nodes in the gene heterogeneous network
 - `edges_d.pkl`: disease heterogeneous network, which contains three edge types.
-- `disease_feature.npy`: node feature of disease heterogeneous networks,  which contains 32-dimensional features of 19182 nodes in the gene heterogeneous network
+- `disease_feature.npy`: node feature of disease heterogeneous networks,  which contains 32-dimensional features of 27807 nodes in the gene heterogeneous network
 - `result.npy`: disease gene dataset(10000 disease-gene assoications) contains three columns: gene_id, disease_id and their true label.
 
 The file format of the input gene and disease heterogeneous networks is “.pickle”. The data type in the file is a list and the sparse matrices of all association relationships are stored in the list.
