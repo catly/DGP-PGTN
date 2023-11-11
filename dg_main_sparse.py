@@ -45,8 +45,8 @@ if __name__ == '__main__':
     edge_u_tmp = torch.stack((torch.arange(0,num_nodes_u),torch.arange(0,num_nodes_u))).type(torch.LongTensor)
     value_u_tmp = torch.ones(num_nodes_u).type(torch.FloatTensor)
     A_u.append((edge_u_tmp,value_u_tmp))
-    with open('data/gene_feature.npy', 'rb') as f:
-        edges_u= np.load(f)
+    with open('data/genefeature.pkl', 'rb') as f:
+        edges_u = pickle.load(f)
     node_features_u = torch.from_numpy(edges_u)
 
 
@@ -65,8 +65,8 @@ if __name__ == '__main__':
     value_v_tmp = torch.ones(num_nodes_v).type(torch.FloatTensor)
     A_v.append((edge_v_tmp,value_v_tmp))
 
-    with open('data/disease_feature.npy', 'rb') as f:
-        edges_v = np.load(f)
+    with open('data/diseasefeature.pkl', 'rb') as f:
+        edges_v = pickle.load(f)
     node_features_v = torch.from_numpy(edges_v)
 
     result = np.load('data/result.npy')
